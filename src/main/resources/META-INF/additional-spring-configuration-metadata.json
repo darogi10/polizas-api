@@ -1,0 +1,22 @@
+{
+  "properties": [
+    {
+      "name": "polizas.ipc",
+      "type": "java.math.BigDecimal",
+      "description": "Porcentaje de IPC aplicado al canon en cada renovación (ej. 5.2).",
+      "defaultValue": 5.2
+    },
+    {
+      "name": "security.api-key",
+      "type": "java.lang.String",
+      "description": "Valor esperado del header x-api-key.",
+      "defaultValue": "123456"
+    },
+    {
+      "name": "core.url",
+      "type": "java.lang.String",
+      "description": "URL del servicio del CORE (por defecto el mock local).",
+      "defaultValue": "http://localhost:8080/core-mock/evento"
+    }
+  ]
+}

@@ -82,7 +82,9 @@ public class Poliza {
             throw new ReglaNegocioException("La póliza " + id + " ya está cancelada");
         }
         this.estado = EstadoPoliza.CANCELADA;
-        riesgos.forEach(Riesgo::cancelarSiActivo);
+                for (Riesgo riesgo : riesgos) {
+            riesgo.cancelarSiActivo();
+        }
     }
 
     public Riesgo agregarRiesgo(String direccionInmueble, String arrendatario) {
